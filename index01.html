@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Platform</title>
+    <link rel="stylesheet" href="style01.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="header">
+        <div class="header-left">
+            <div class="logo">S</div>
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search Social">
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="h-icon active"><i class="fa fa-home"></i></div>
+            <div class="h-icon"><i class="fa fa-tv"></i></div>
+            <div class="h-icon"><i class="fa fa-store"></i></div>
+            <div class="h-icon"><i class="fa fa-users"></i></div>
+        </div>
+        <div class="header-right">
+            <div class="user-pill">
+                <div class="avatar-sm"></div>
+                <span>User</span>
+            </div>
+            <div class="circle-btn"><i class="fa fa-bell"></i></div>
+            <div class="circle-btn"><i class="fa fa-comment"></i></div>
+        </div>
+    </nav>
+
+    <!-- Main Layout Container -->
+    <div class="container">
+        
+        <!-- Left Sidebar (Navigation Menu) -->
+        <aside class="sidebar-left">
+            <div class="menu-item">
+                <div class="avatar-sm"></div>
+                <strong>Your Profile</strong>
+            </div>
+            <div class="menu-item"><i class="fa fa-user-group"></i> Friends</div>
+            <div class="menu-item"><i class="fa fa-clock-rotate-left"></i> Memories</div>
+            <div class="menu-item"><i class="fa fa-bookmark"></i> Saved</div>
+            <div class="menu-item"><i class="fa fa-flag"></i> Pages</div>
+            <hr>
+            <p class="section-title">Your Shortcuts</p>
+            <div class="menu-item"><i class="fa fa-gamepad"></i> Gaming</div>
+        </aside>
+
+        <!-- Middle Section (Feed) -->
+        <main class="feed">
+            <div class="create-post-card">
+                <div class="post-input-row">
+                    <div class="avatar-sm"></div>
+                    <input type="text" id="postInput" placeholder="What's on your mind?">
+                </div>
+                <hr>
+                <div class="post-actions">
+                    <div class="p-action"><i class="fa fa-video" style="color: #f3425f"></i> Live</div>
+                    <div class="p-action"><i class="fa fa-images" style="color: #45bd62"></i> Photo</div>
+                    <div class="p-action"><i class="fa fa-smile" style="color: #f7b928"></i> Activity</div>
+                </div>
+            </div>
+
+            <div id="dynamic-feed">
+                <!-- Posts will appear here -->
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Contacts) -->
+        <aside class="sidebar-right">
+            <p class="section-title">Contacts</p>
+            <div class="contact-row">
+                <div class="avatar-sm"></div>
+                <span>John Doe</span>
+                <span class="online-status"></span>
+            </div>
+            <div class="contact-row">
+                <div class="avatar-sm"></div>
+                <span>Jane Smith</span>
+                <span class="online-status"></span>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
